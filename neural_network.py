@@ -114,7 +114,7 @@ y = np.array([
 
 nn = NeuralNetwork(x, y)
 
-nn.start(250000)
+nn.start(15000)
 
 plt.plot(nn.output_0)
 plt.plot(nn.output_1)
@@ -124,10 +124,7 @@ plt.plot(nn.output_3)
 plt.legend(['actual 0', 'actual 1', 'actual 1', 'actual 0'])
 plt.ylabel("loss")
 
-print(nn.output_0[-1])
-print(nn.output_1[-1])
-print(nn.output_2[-1])
-print(nn.output_3[-1])
+print(nn.output)
 
 plt.show()
 
